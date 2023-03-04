@@ -55,5 +55,7 @@ public class Address {
         return zipcode;
     }
 
+    public String getAddressLine() {return numOfStreet + ", "+ nameOfStreet + ", "+apartmentNum+", "+city+", "+state+", "+zipcode;}
+
 
 }

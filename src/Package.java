@@ -8,7 +8,7 @@ public class Package {
     private double height;
 
 
-    public Package(double weight, double l , double w, double h){
+    public Package(String org,String dest,double weight, double l , double w, double h){
       if(weight>=0.1){
           this.weight = weight;
       }
@@ -17,15 +17,11 @@ public class Package {
           width = w;
           height = h;
       }
+      origin = org;
+      this.dest = dest;
     }
 
-    public void Addy(String origin){
-        this.origin = origin;
-    }
 
-    public void AddyDest(String dest){
-        this.dest = dest;
-    }
     public String getOrigin() {
         return origin;
     }
